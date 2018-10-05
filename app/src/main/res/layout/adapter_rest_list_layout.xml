@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:background="@drawable/rectangle_shape">
+
+        <ImageView
+            android:id="@+id/iv_rest_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_rest_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Alrif jhgdjac jhgsbadjashbxasbcxhasbjsa"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_rest_logo"
+            app:layout_constraintTop_toTopOf="@id/iv_rest_logo" />
+
+        <TextView
+            android:id="@+id/txt_rest_addr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Adyar, Chennai"
+            android:textColor="#B3B3B3"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_rest_logo"
+            app:layout_constraintTop_toBottomOf="@id/txt_rest_name" />
+
+        <TextView
+            android:id="@+id/txt_rest_spl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Adyar, Chennai"
+            android:textColor="#B3B3B3"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_rest_logo"
+            app:layout_constraintTop_toBottomOf="@id/txt_rest_addr" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_margin="16dp"
+            android:background="#B3B3B3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_rest_logo" />
+
+        <TextView
+            android:id="@+id/txt_deliv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="45 mins"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <TextView
+            android:id="@+id/txt_min_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginStart="45dp"
+            android:text="100 min order"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_deliv_duration"
+            app:layout_constraintStart_toEndOf="@id/txt_deliv_duration"
+            app:layout_constraintTop_toTopOf="@+id/txt_deliv_duration" />
+
+        <TextView
+            android:id="@+id/txt_order_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:drawableEnd="@drawable/ic_arrow_back_black_24dp"
+            android:text="Order Now"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_min_order"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_min_order" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
